@@ -6,5 +6,10 @@ pipeline {
                 echo 'Hello world!' 
             }
         }
+        stage('Stage 2') {
+            steps {
+                sh 'touch test.txt' 
+            }
+        }
     }
 }
